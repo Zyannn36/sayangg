@@ -141,6 +141,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                image-rendering: auto;
             }
 
             /* CARD */
@@ -284,22 +285,132 @@
 
             /* HP MODE */
             @media (max-width: 768px) {
+                body {
+                    overflow-x: hidden;
+                }
+
+                .container {
+                    padding: 15px;
+                }
+
                 .title {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
+                    line-height: 1.3;
+                }
+
+                .subtitle {
+                    font-size: 14px;
                 }
 
                 .slider {
-                    width: 230px;
-                    height: 230px;
-                    border-radius: 25px;
+                    width: 95%;
+                    max-width: 340px;
+                    height: 340px;
+                    border-radius: 20px;
+                }
+
+                .card {
+                    width: 100%;
+                    padding: 20px;
+                    margin: 25px auto;
+                }
+
+                .card h2 {
+                    font-size: 22px;
+                }
+
+                .typing {
+                    font-size: 15px;
+                    line-height: 1.8;
+                }
+
+                .countdown {
+                    font-size: 15px;
+                }
+
+                .love-btn {
+                    font-size: 16px;
+                    padding: 14px;
+                }
+
+                .gallery-title h2 {
+                    font-size: 1.7rem;
                 }
 
                 .gallery {
-                    columns: 2 140px;
+                    columns: 2;
+                    column-gap: 10px;
+                    padding: 10px;
                 }
 
                 .photo-card {
                     transform: none !important;
+                    margin-bottom: 10px;
+                }
+
+                .photo-caption {
+                    font-size: 13px;
+                }
+
+                marquee {
+                    font-size: 14px;
+                }
+
+                .bottom-nav {
+                    width: 92%;
+                    justify-content: space-around;
+                    gap: 10px;
+                    padding: 12px;
+                }
+
+                .bottom-nav div {
+                    font-size: 24px;
+                }
+
+                #intro h1 {
+                    font-size: 2rem;
+                    padding: 0 15px;
+                }
+
+                #openBtn {
+                    width: 220px;
+                    font-size: 16px;
+                }
+            }
+
+            /* HP KECIL */
+            @media (max-width: 480px) {
+                .title {
+                    font-size: 1.5rem;
+                }
+
+                .subtitle {
+                    font-size: 13px;
+                }
+
+                .slider {
+                    width: 95%;
+                    height: 280px;
+                }
+
+                .gallery {
+                    columns: 1;
+                }
+
+                .card {
+                    padding: 15px;
+                }
+
+                .typing {
+                    font-size: 14px;
+                }
+
+                .countdown {
+                    font-size: 14px;
+                }
+
+                .bottom-nav {
+                    width: 95%;
                 }
             }
         </style>
